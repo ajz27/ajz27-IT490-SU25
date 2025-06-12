@@ -16,5 +16,12 @@ sudo apt install php
 sudo apt install composer
 composer update
 
+# install rabbitmq
+sudo apt install rabbitmq-server
+
+# install zerotier
+curl -s https://install.zerotier.com/ | sudo bash
+# sudo zerotier-cli join (whatever the code is, can be joined through email from admin)
+
 # run server sample
 php RabbitMQServerSample.php
