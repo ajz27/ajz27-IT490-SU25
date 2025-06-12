@@ -2,7 +2,7 @@
 sudo apt install net-tools
 
 # get repository files
-wget https://github.com/MattToegel/IT490/archive/refs/heads/main.zip
+git clone https://github.com/MattToegel/IT490/
 
 # ssh commands
 sudo apt install openssh-server
