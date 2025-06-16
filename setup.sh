@@ -12,6 +12,9 @@ sudo ufw allow ssh
 # php command
 sudo apt install php
 
+# edit json file
+sed -i 's/Something-Fun/something-fun/' IT490/composer.json
+
 # composer
 sudo apt install composer
 composer update
@@ -21,7 +24,6 @@ sudo apt install rabbitmq-server
 
 # install zerotier
 curl -s https://install.zerotier.com/ | sudo bash
-# sudo zerotier-cli join (whatever the code is, can be joined through email from admin)
+sudo zerotier-cli join 93afae596392e44c
 
-# run server sample
-php RabbitMQServerSample.php
+
