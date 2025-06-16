@@ -10,7 +10,7 @@ sudo systemctl status ssh
 sudo ufw allow ssh
 
 # php command
-sudo apt install php
+sudo apt install php -y
 
 # edit json file
 sed -i 's/Something-Fun/something-fun/' IT490/composer.json
