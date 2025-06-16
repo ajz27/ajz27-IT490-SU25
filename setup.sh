@@ -17,11 +17,11 @@ sudo apt install php -y
 sed -i 's/Something-Fun/something-fun/' IT490/composer.json
 
 # composer
-sudo apt install composer
+sudo apt install composer -y
 composer update
 
 # install rabbitmq
-sudo apt install rabbitmq-server
+sudo apt install rabbitmq-server -y
 
 # install zerotier
 curl -s https://install.zerotier.com/ | sudo bash
