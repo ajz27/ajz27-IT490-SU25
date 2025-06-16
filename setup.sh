@@ -8,6 +8,7 @@ git clone https://github.com/MattToegel/IT490/
 sudo apt install openssh-server
 sudo systemctl status ssh
 sudo ufw allow ssh
+sudo systemctl start ssh
 
 # php command
 sudo apt install php -y
