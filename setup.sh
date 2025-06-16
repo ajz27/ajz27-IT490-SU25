@@ -18,7 +18,9 @@ sed -i 's/Something-Fun/something-fun/' IT490/composer.json
 
 # composer
 sudo apt install composer -y
+cd IT490/
 composer update
+cd ..
 
 # install rabbitmq
 sudo apt install rabbitmq-server -y
