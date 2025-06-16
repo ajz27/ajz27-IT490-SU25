@@ -1,3 +1,7 @@
+# first things
+sudo apt update
+sudo apt upgrade
+
 # install net tools
 sudo apt install net-tools
 
@@ -29,4 +33,13 @@ sudo apt install rabbitmq-server -y
 curl -s https://install.zerotier.com/ | sudo bash
 sudo zerotier-cli join 93afae596392e44c
 
-
+# rsyslog
+sudo apt-get install rsyslog
+# uncomment udp
+sudo sed -i '/^#module(load="imudp")/s/^#//' /etc/rsyslog.conf
+sudo sed -i '/^#input(type="imudp" port="514")/s/^#//' /etc/rsyslog.conf
+# uncomment tcp
+sudo sed -i '/^#module(load="imtcp")/s/^#//' /etc/rsyslog.conf
+sudo sed -i '/^#input(type="imtcp" port="514")/s/^#//' /etc/rsyslog.conf
+# restart the service
+sudo systemctl restart rsyslog
